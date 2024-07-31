@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Gesserit Downloader",
+  "version": "1.0",
+  "description": "Add a nice orange Free Download button onto the Gesserit TikTok TTS page that skips their account creation requirement.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://gesserit.co/*"],
+      "js": ["content.js"],
+	  "css": ["styles.css"],
+	  "run_at": "document_end"
+    }
+  ]
+}
